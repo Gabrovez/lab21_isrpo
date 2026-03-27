@@ -31,5 +31,13 @@ function stopTimer() {
     }
 }
 
+function resetTimer() {
+    stopTimer();
+    seconds = 0;
+    updateDisplay();
+}
+
+
 startBtn.addEventListener('click', startTimer);
 stopBtn.addEventListener('click', stopTimer);
+resetBtn.addEventListener('click', resetTimer);
